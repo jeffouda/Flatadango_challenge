@@ -1,0 +1,79 @@
+/* Basic styling for the application */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Movie card styling */
+.movie-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+#booking-section {
+  display: none;
+}
+.movie-card img {
+  width: 100px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.movie-card button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+/* Seat map styling */
+#seat-map {
+  display: grid;
+  grid-template-columns: repeat(10, 40px); /* Example: 10 seats per row */
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.seat {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #e0e0e0;
+}
+
+.seat.available:hover {
+  background-color: #a0d9e0;
+}
+
+.seat.selected {
+  background-color: #28a745; /* Green for selected */
+  color: white;
+}
+
+.seat.occupied {
+  background-color: #dc3545; /* Red for occupied */
+  cursor: not-allowed;
+}
