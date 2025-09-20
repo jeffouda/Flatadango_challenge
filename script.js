@@ -43,6 +43,7 @@ function renderMovie(movie) {
     }
   });
 }
+
 //  Fetch Movie 1
 fetch("http://localhost:3000/films/1")
   .then((res) => res.json())
@@ -72,3 +73,58 @@ fetch("http://localhost:3000/films/5")
   .then((res) => res.json())
   .then((movie) => renderMovie(movie))
   .catch((err) => console.error("Error fetching film 5:", err));
+
+// Fetch Movie 6
+fetch("http://localhost:3000/films/6")
+  .then((res) => res.json())
+  .then((movie) => renderMovie(movie))
+  .catch((err) => console.error("Error fetching film 6:", err));
+
+//Fetch Movie 7
+fetch("http://localhost:3000/films/7")
+  .then((res) => res.json())
+  .then((movie) => renderMovie(movie))
+  .catch((err) => console.error("Error fetching film 7:", err));
+
+//Fetch Movie 8
+fetch("http://localhost:3000/films/8")
+  .then((res) => res.json())
+  .then((movie) => renderMovie(movie))
+  .catch((err) => console.error("Error fetching film 8:", err));
+
+//Fetch Movie 9
+fetch("http://localhost:3000/films/9")
+  .then((res) => res.json())
+  .then((movie) => renderMovie(movie))
+  .catch((err) => console.error("Error fetching film 9:", err));
+
+//Fetch Movie 10
+fetch("http://localhost:3000/films/10")
+  .then((res) => res.json())
+  .then((movie) => renderMovie(movie))
+  .catch((err) => console.error("Error fetching film"));
+//Fetch Movie 11
+fetch("http://localhost:3000/films/11")
+  .then((res) => res.json())
+  .then((movie) => renderMovie(movie))
+  .catch((err) => console.error("Error fetching film 11", err));
+//Fetch Movie 12
+fetch("http://localhost:3000/films/12")
+  .then((res) => res.json())
+  .then((movie) => renderMovie(movie))
+  .catch((err) => console.error("Error fetching film"));
+//Fetch Movie 13
+fetch("http://localhost:3000/films/13")
+  .then((res) => res.json())
+  .then((movie) => renderMovie(movie))
+  .catch((err) => console.error("Error fetching film"));
+//Fetch Movie 14
+fetch("http://localhost:3000/films/14")
+  .then((res) => res.json())
+  .then((movie) => renderMovie(movie))
+  .catch((err) => console.error("Error fetching film"));
+//Fetch Movie 15
+fetch("http://localhost:3000/films/15")
+  .then((res) => res.json())
+  .then((movie) => renderMovie(movie))
+  .catch((err) => console.error("Error fetching film"));
