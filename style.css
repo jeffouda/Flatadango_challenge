@@ -36,7 +36,9 @@ main {
   height: auto;
   margin-right: 15px;
 }
-
+#films {
+  list-style: none;
+}
 .movie-card button {
   background-color: #007bff;
   color: white;
