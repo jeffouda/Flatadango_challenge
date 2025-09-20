@@ -43,8 +43,7 @@ function renderMovie(movie) {
     }
   });
 }
-
-// Fetch Movie 1
+//  Fetch Movie 1
 fetch("http://localhost:3000/films/1")
   .then((res) => res.json())
   .then((movie) => renderMovie(movie))
@@ -55,3 +54,21 @@ fetch("http://localhost:3000/films/2")
   .then((res) => res.json())
   .then((movie) => renderMovie(movie))
   .catch((err) => console.error("Error fetching film 2:", err));
+
+// Fetch Movie 3
+fetch("http://localhost:3000/films/3")
+  .then((res) => res.json())
+  .then((movie) => renderMovie(movie))
+  .catch((err) => console.error("Error fetching film 3:", err));
+
+// Fetch Movie 4
+fetch("http://localhost:3000/films/4")
+  .then((res) => res.json())
+  .then((movie) => renderMovie(movie))
+  .catch((err) => console.error("Error fetching film 4:", err));
+
+//Fetch Movie 5
+fetch("http://localhost:3000/films/5")
+  .then((res) => res.json())
+  .then((movie) => renderMovie(movie))
+  .catch((err) => console.error("Error fetching film 5:", err));
